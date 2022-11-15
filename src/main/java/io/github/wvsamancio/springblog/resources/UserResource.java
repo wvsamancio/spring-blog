@@ -1,4 +1,4 @@
-package io.github.wvsamancio.springblog.controllers;
+package io.github.wvsamancio.springblog.resources;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,7 +20,7 @@ import io.github.wvsamancio.springblog.repositories.UserRepository;
 
 @RestController
 @RequestMapping(value = "/users")
-public class UserController {
+public class UserResource {
 
     @Autowired
     private UserRepository repository;

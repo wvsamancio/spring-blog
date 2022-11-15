@@ -4,4 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import io.github.wvsamancio.springblog.entities.User;
 
-public interface UserRepository extends JpaRepository<User, Long> {}
+public interface UserRepository extends JpaRepository<User, Long> {
+}
