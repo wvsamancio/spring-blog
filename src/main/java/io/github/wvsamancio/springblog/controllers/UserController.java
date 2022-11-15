@@ -63,7 +63,6 @@ public class UserController {
         Optional<User> oldUser = repository.findById(id);
         if (oldUser.isPresent()) {
             User user = oldUser.get();
-            user.setId(id);
             user.setPasswd(newUser.getPasswd());
             repository.save(user);
             return ResponseEntity.ok(user);
